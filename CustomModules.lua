@@ -11,8 +11,8 @@ local COB = function(tab, argstable)
 
 end
 
-infjump = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
-    ["Name"] = "infinite Jump",
+InfiniteJump = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
+    ["Name"] = "Infinite Jump",
     ["Function"] = function(callback)
         local InfiniteJumpEnabled = true
         game:GetService("UserInputService").JumpRequest:connect(function()
