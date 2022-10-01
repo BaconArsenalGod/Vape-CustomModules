@@ -38,10 +38,6 @@ local acdis2 = COB("Blatant", {
             bpfwd.Position = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X + 74, game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y + 25, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
             bpfwd.P = 10000
             bpfwd.D = 0
-            wait(.1)
-             bv:remove()
-             wait(.4)
-           bpfwd:remove()
          end
 	end
 })
