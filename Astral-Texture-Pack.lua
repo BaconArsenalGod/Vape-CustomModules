@@ -11,8 +11,8 @@ local COB = function(tab, argstable)
 
 end
 
-MinecrafTexutrepack = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
-    ["Name"] = "MinecraftTexturePack",
+txtr = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
+    ["Name"] = "txtr",
     ["Function"] = function(callback)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NEMOEXEYT/Vape-CustomModules/main/Astral-Minecraft-TexturePack", true))()
     ["HoverText"] = "Loads da texturepack"
