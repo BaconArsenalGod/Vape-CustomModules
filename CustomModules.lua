@@ -50,6 +50,8 @@ wait(.1)
 bv:remove()
 wait(.4)
 bpfwd:remove()
+createwarning("50%AntiCheatDisabler", "Disabled 50% of the anti cheat.", 10)
+50%AntiCheatDisabler["ToggleButton"](false)				
 
 			end
 		end,
