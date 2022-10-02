@@ -31,6 +31,7 @@ InfiniteJump = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].Creat
 		["Name"] = "50%AntiCheatDisabler",
 		["Function"] = function(callback)
 			if callback then
+createwarning("50%AntiCheatDisabler", "Disabled 50% of the anti cheat.", 10)
 local vec3 = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X + 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y + 12, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
 local bp = Instance.new('BodyPosition')
 bp.Parent = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
@@ -50,8 +51,6 @@ wait(.1)
 bv:remove()
 wait(.4)
 bpfwd:remove()
-createwarning("50%AntiCheatDisabler", "Disabled 50% of the anti cheat.", 10)
-50%AntiCheatDisabler["ToggleButton"](false)				
 
 			end
 		end,
