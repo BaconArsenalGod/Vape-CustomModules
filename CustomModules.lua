@@ -27,6 +27,16 @@ InfiniteJump = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].Creat
 
 
 
+
+local function createwarning(title, text, delay)
+    local suc, res = pcall(function()
+        local frame = GuiLibrary["CreateNotification"](title, text, delay, "assets/WarningNotification.png")
+        frame.Frame.Frame.ImageColor3 = Color3.fromRGB(236, 129, 44)
+        return frame
+    end)
+    return (suc and res)
+end
+
 	ac = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
 		["Name"] = "50%AntiCheatDisabler",
 		["Function"] = function(callback)
