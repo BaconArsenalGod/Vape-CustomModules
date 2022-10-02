@@ -1,3 +1,7 @@
+-- I Don't really like coding I Just doing this shit for fun so yeah :)
+-- a fucking lego game coder or idk man just call me whatever u want lol
+
+
 repeat
     task.wait()
 until game:IsLoaded()
