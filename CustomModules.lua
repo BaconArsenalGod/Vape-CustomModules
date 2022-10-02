@@ -27,9 +27,6 @@ InfiniteJump = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].Creat
 
 
 
-
-local actog = false
-	local actogtick = tick()
 	ac = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
 		["Name"] = "AcDisabler2",
 		["Function"] = function(callback)
@@ -65,8 +62,6 @@ bpfwd:remove()
 
 
 
-local txtrtog = false
-	local txtrtogtick = tick()
 	txtr = GuiLibrary["ObjectsThatCanBeSaved"]["WorldWindow"]["Api"].CreateOptionsButton({
 		["Name"] = "MinecraftTexturePack",
 		["Function"] = function(callback)
