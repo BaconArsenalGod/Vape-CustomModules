@@ -62,13 +62,13 @@ bpfwd:remove()
 
 
 
-	txtr = GuiLibrary["ObjectsThatCanBeSaved"]["WorldWindow"]["Api"].CreateOptionsButton({
-		["Name"] = "MinecraftTexturePack",
+	TexturePack = GuiLibrary["ObjectsThatCanBeSaved"]["WorldWindow"]["Api"].CreateOptionsButton({
+		["Name"] = "AstralTexturePack",
 		["Function"] = function(callback)
 			if callback then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NEMOEXEYT/Vape-CustomModules/main/Astral-Minecraft-TexturePack", true))()
 
 			end
 		end,
-		["HoverText"] = "Loads da texturepack (Credits goes to Astra/Mastadawn ofc.)"
+		["HoverText"] = "loads da texturepack (credits goes to astral/mastadawn ofc)."
 	})
