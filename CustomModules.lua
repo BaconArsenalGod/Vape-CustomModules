@@ -56,7 +56,7 @@ wait(.1)
 bv:remove()
 wait(.4)
 bpfwd:remove()
-
+createwarning("AcDisabler2", "Disabled 50% OF THE ANTICHEAT.", 3)
 			end
 		end,
 		["HoverText"] = "Disables 50% of the Anti Cheat."
