@@ -57,7 +57,6 @@ wait(0.1)
 game:GetService("StarterPlayer").StarterPlayerScripts.Modules.anticheat:Destroy()
 wait(0.1)
 game:GetService("ReplicatedStorage").Modules.anticheat:Destroy()
-wait(3)
 createwarning("50%AntiCheatDisabler", "Disabled 50% of the anti cheat.", 3)				
 
 			end
