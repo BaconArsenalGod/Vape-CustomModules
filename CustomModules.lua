@@ -26,7 +26,18 @@ InfiniteJump = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].Creat
 
 
 
+repeat
+    task.wait()
+until game:IsLoaded()
+repeat
+    task.wait()
+until shared.GuiLibrary
+local GuiLibrary = shared.GuiLibrary
+local ScriptSettings = {}
+local UIS = game:GetService("UserInputService")
+local COB = function(tab, argstable)
 
+end
 
 local function createwarning(title, text, delay)
     local suc, res = pcall(function()
