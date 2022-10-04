@@ -80,7 +80,7 @@ wait(.1)
 bv:remove()
 wait(.4)
 bpfwd:remove()				
-createwarning("65%AcDisabler", "Disabled 65% of the anti cheat.", 5)
+createwarning("65%AcDisabler", "Disabled 65% of the anti cheat.", 3)
 				
 			end
 		end,
