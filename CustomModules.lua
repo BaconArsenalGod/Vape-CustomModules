@@ -52,11 +52,11 @@ end
 		["Name"] = "60%AcDisabler",
 		["Function"] = function(callback)
 			if callback then
-game:GetService("Players").LocalPlayer.PlayerScripts.Modules.anticheat:Destroy()
-wait(0.1)
-game:GetService("StarterPlayer").StarterPlayerScripts.Modules.anticheat:Destroy()
-wait(0.1)
 game:GetService("ReplicatedStorage").Modules.anticheat:Destroy()
+wait(0.1)
+game:GetService("Players").LocalPlayer.PlayerScripts.Modules:Destroy()
+wait(0.1)
+game:GetService("StarterPlayer").StarterPlayerScripts.Modules:Destroy()
 wait(1)
 local vec3 = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X + 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y + 12, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
 local bp = Instance.new('BodyPosition')
