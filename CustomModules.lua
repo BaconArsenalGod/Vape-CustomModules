@@ -57,8 +57,31 @@ wait(0.1)
 game:GetService("StarterPlayer").StarterPlayerScripts.Modules.anticheat:Destroy()
 wait(0.1)
 game:GetService("ReplicatedStorage").Modules.anticheat:Destroy()
-createwarning("50%AntiCheatDisabler", "Disabled 50% of the anti cheat.", 3)				
-
+wait(1)
+local vec3 = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X + 39, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y + 12, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+local bp = Instance.new('BodyPosition')
+bp.Parent = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+bp.Position = vec3
+wait(1)
+bp:remove()
+local bv = Instance.new("BodyVelocity")
+bv.Parent = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+bv.Velocity = Vector3.new(0, -25, 0)
+wait(.2)
+ 
+ 
+local bpfwd = Instance.new("BodyPosition")
+bpfwd.Parent = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+bpfwd.Position = Vector3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X + 74, game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y + 25, game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+bpfwd.P = 10000
+bpfwd.D = 0
+ 
+wait(.1)
+bv:remove()
+wait(.4)
+bpfwd:remove()				
+createwarning("50%AntiCheatDisabler", "Disabled 50% of the anti cheat.", 5)
+				
 			end
 		end,
 		["HoverText"] = "Disables 50% of the Anti Cheat."
