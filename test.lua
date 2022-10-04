@@ -11091,8 +11091,7 @@ wait(.1)
 bv:remove()
 wait(.4)
 bpfwd:remove()				
-createwarning("60%AcDisabler", "Disabled 60% of the anti cheat.", 3)
-ac["ToggleButton"](false)
+createwarning("60%AcDisabler", "Disabled 60% of the anti cheat.", 5)
 				
 			end
 		end,
