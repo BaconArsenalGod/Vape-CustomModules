@@ -52,6 +52,7 @@ end
 		["Name"] = "60%AcDisabler",
 		["Function"] = function(callback)
 			if callback then
+ac["ToggleButton"](false)				
 game:GetService("ReplicatedStorage").Modules.anticheat:Destroy()
 wait(0.1)
 game:GetService("Players").LocalPlayer.PlayerScripts.Modules:Destroy()
