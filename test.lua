@@ -207,7 +207,7 @@ runcode(function()
 	end
 
     Killaura = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
-        ["Name"] = "Killaura",
+        ["Name"] = "OPKillaura",
         ["Function"] = function(callback)
             if callback then
 				if killauraaimcirclepart then 
