@@ -49,7 +49,7 @@ local function createwarning(title, text, delay)
 end
 
 	ac = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
-		["Name"] = "50%AntiCheatDisabler",
+		["Name"] = "65%AcDisabler",
 		["Function"] = function(callback)
 			if callback then
 game:GetService("Players").LocalPlayer.PlayerScripts.Modules.anticheat:Destroy()
@@ -80,7 +80,7 @@ wait(.1)
 bv:remove()
 wait(.4)
 bpfwd:remove()				
-createwarning("50%AntiCheatDisabler", "Disabled 50% of the anti cheat.", 5)
+createwarning("65%AcDisabler", "Disabled 65% of the anti cheat.", 5)
 				
 			end
 		end,
