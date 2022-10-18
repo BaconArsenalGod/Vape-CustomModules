@@ -11096,3 +11096,27 @@ ac["ToggleButton"](false)
 		end,
 		["HoverText"] = "Disables 60% of the Anti Cheat."
 	})
+
+
+
+
+
+	btm = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton({
+		["Name"] = "BetterMultiAura",
+		["Function"] = function(callback)
+			if callback then
+                bedwars["PaintRemote"] = getremote(debug.getconstants(KnitClient.Controllers.PaintShotgunController.fire))
+                repeat
+                    task.wait(0.03)
+                    local plrs = GetAllNearestHumanoidToPosition(18.8)
+                    for i,plr in pairs(plrs) do
+                        local selfpos = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+                        local newpos = plr.Character.HumanoidRootPart.Position
+                        bedwars["ClientHandler"]:Get(bedwars["PaintRemote"]):SendToServer(selfpos, CFrame.lookAt(selfpos, newpos).lookVector)
+                    end
+                until BetterMultiaura["Enabled"] == false
+								
+			end
+		end,
+		["HoverText"] = "a Better MultiAura."
+	})
