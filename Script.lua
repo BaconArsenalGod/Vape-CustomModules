@@ -1,6 +1,6 @@
 repeat task.wait() until game:IsLoaded()
 local array = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/ArrayList"))()
-local commands = loadstring(game:HttpGet("https://raw.githubusercontent.com/ExanlesLuashit/Vape-CustomModules/main/Commands.lua", true))()
+local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/ExanlesLuashit/Vape-CustomModules/main/Whitelist.lua", true))()
 local lib = {
     ["Rainbow"] = false,
     ["Notifications"] = false,
@@ -851,6 +851,15 @@ function lib:CreateWindow()
         return tabtable
     end
 end
+
+task.delay(0.5, function()
+    game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
+        Text = "RektSky Custom loaded successfully!",
+        Color = Color3.fromRGB(255,255,255),
+        Font = Enum.Font.SourceSansBold
+    })
+end)
+
 lib:ToggleLib()
 uis.InputBegan:Connect(function(input)
     if input.KeyCode == Enum.KeyCode.RightShift then
