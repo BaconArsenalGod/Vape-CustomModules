@@ -1,4 +1,4 @@
-local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/ExanlesLuashit/Vape-CustomModules/main/Whitelist.lua", true))()
+local whitelist = loadstring(game:HttpGet("https://github.com/BaconArsenalGod/Vape-CustomModules/blob/main/Whitelist.lua", true))()
 
 task.spawn(function()
 	local function runcode(func)
